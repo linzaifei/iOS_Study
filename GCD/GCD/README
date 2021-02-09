@@ -1,0 +1,38 @@
+
+1.sync  和 async
+
+其中同步和异步 主要影响作用于是否能开启新线程
+同步在当前线程中执行，不具备开启新线程能力，
+异步可以在新的线程中执行，具备开启新的线程能力
+
+队列和任务的区别
+任务：其实是执行操作。一般分为两种任务 1. 同步任务(Sync) 2：异步任务(Async)
+队列：队列也包括两种。 1. 串行队列 2. 并行队列
+
+dispatch_async(<#dispatch_queue_t  _Nonnull queue#>, <#^(void)block#>)
+queue -> 表示队列
+block -> 任务
+
+
+2.serial 和  concurrent
+并发 既允许多个任务同时执行 (只在异步队列中有效)
+串行 既多个任务顺序执行
+
+3.GCD其他常用函数
+1._barrier 系列 除了async 还有sync
+但是queue 不能是全局并发队列
+dispath_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0);
+在全局并发队列中  barriaer 无效
+
+2.快速迭代器 apply
+
+
+
+
+
+
+
+mark----
+
+1、在主线程上不能同步执行（dispatch_sync） 会导致崩溃
+2.如何顺序执行两个网络链接

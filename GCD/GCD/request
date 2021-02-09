@@ -1,0 +1,258 @@
+
+核心思想：将异步变成同步
+下述描述了常见场景下的代码实现：包括顺序执行和同时执行异步操作
+
+顺序执行 ：
+
+方式 : 信号量semaphore (必须放在子线程 dispatch_semaphore_wait会卡死主线程) （例：1执行完了执行2）
+
+- (void)serialBySemaphore {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+ 
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+ 
+        [self requestOneWithSuccessBlock:^{
+            dispatch_semaphore_signal(semaphore);
+        }];
+ 
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+ 
+        [self requestTwoWithBlock:^{
+        }];
+    });
+}
+ 
+
+执行到dispatch_semaphore_wait时，由于信号量为0，进行等待，请求1完成后调用dispatch_semaphore_signal ，信号量不再为0，接着执行请求2
+
+方式： GCD dispatch_group_enter/leave （例： 1， 2 同时执行 执行完了再执行3）
+
+-(void)serialByGroupWait {
+     
+    dispatch_group_t group = dispatch_group_create();
+     
+    dispatch_group_enter(group);
+    [self requestOneWithSuccessBlock:^{
+        dispatch_group_leave(group);
+    }];
+     
+    dispatch_group_enter(group);
+    [self requestTwoWithBlock:^{
+        dispatch_group_leave(group);
+    }];
+  // 1  2同时执行
+     
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);// 1 2 执行完 下面才会执行
+     
+    dispatch_group_enter(group);
+    [self requestThreeWithBlock:^{
+        dispatch_group_leave(group);
+    }];
+     
+  // 1 2 3 都完成 才会执行
+    dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"all request  done!");
+    });
+}
+ 
+
+执行到dispatch_group_wait时，由于enter数不等于leave数，进行等待，请求1，2都完成后调用dispatch_group_leave ，enter数等于leave数，接着执行请求3。 请求1，2，3都执行后，dispatch_group_notify执行
+
+方式三：回调中执行
+
+- (void) serialByCallBack {
+    [self requestOneWithSuccessBlock:^{
+        [self requestTwoWithBlock:^{
+        }];
+    }];
+}
+ 
+
+low方法，请求一多，嵌套恶心
+
+同时执行 ：
+
+方式：信号量
+
+-(void)concurrentBySemaphore {
+ dispatch_group_t group = dispatch_group_create();
+     
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        [self requestOneWithSuccessBlock:^{
+            dispatch_semaphore_signal(sema);
+        }];
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    });
+     
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        [self requestTwoWithSuccessBlock:^{
+            dispatch_semaphore_signal(sema);
+        }];
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"全部搞完了");
+    });
+}
+ 
+
+方式：dispatch_group_enter
+
+
+-(void)concurrentByGroup {
+     
+    dispatch_group_t group = dispatch_group_create();
+     
+    dispatch_group_enter(group);
+    [self requestOneWithSuccessBlock:^{
+        dispatch_group_leave(group);
+    }];
+     
+    dispatch_group_enter(group);
+    [self requestTwoWithBlock:^{
+        dispatch_group_leave(group);
+    }];
+     
+  // 1 2  都完成 才会执行
+    dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"all request  done!");
+    });
+}
+ 
+
+
+扩充：循环请求情况 顺序请求/同时请求
+*模拟循环网络请求 同时进行 统一回调 (GCD + 信号量方式)
+
+- (void)concurrentTest1 {
+    dispatch_group_t group = dispatch_group_create();
+    for (int i = 0 ; i < 5; i++) {
+        dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+             // 模拟请求 ↓
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                sleep(3);
+                NSLog(@"任务%d完成",i);
+                 dispatch_semaphore_signal(sema);
+            });
+             // 模拟请求 上
+            dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+        });
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"全部搞完了");
+    });
+}
+ 
+
+执行结果：
+
+00:21:38.413337+0800 mmmm[4595:182516] 任务1完成
+00:21:38.413337+0800 mmmm[4595:182518] 任务3完成
+00:21:38.413358+0800 mmmm[4595:182517] 任务2完成
+00:21:38.413358+0800 mmmm[4595:182515] 任务0完成
+00:21:38.413447+0800 mmmm[4595:182519] 任务4完成
+00:21:38.413843+0800 mmmm[4595:182428] 全部搞完了
+ 
+
+
+
+*模拟循环网络请求 同时进行 统一回调 (GCD + group enter/leave 方式)
+- (void)concurrentTest2 {
+    dispatch_group_t group = dispatch_group_create();
+    for (int i = 0 ; i < 5; i++) {
+        dispatch_group_enter(group);
+          // 模拟请求 ↓
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            sleep(3);
+            NSLog(@"任务%d完成",i);
+            dispatch_group_leave(group);
+        });
+          // 模拟请求 ↑
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"全部搞完了");
+    });
+}
+ 
+
+执行结果：
+
+
+2019-04-12 00:26:38.607040+0800 mmmm[4641:184613] 任务0完成
+2019-04-12 00:26:38.607043+0800 mmmm[4641:184612] 任务2完成
+2019-04-12 00:26:38.607059+0800 mmmm[4641:184611] 任务3完成
+2019-04-12 00:26:38.607067+0800 mmmm[4641:184610] 任务1完成
+2019-04-12 00:26:38.607088+0800 mmmm[4641:184625] 任务4完成
+2019-04-12 00:26:38.607353+0800 mmmm[4641:184559] 全部搞完了
+ 
+
+*模拟循环网络请求 顺序进行 (GCD + 信号量方式)
+
+- (void)serialTest1 {
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (int i = 0 ; i < 5; i++) {
+            NSLog(@"开始%d",i);
+            // 模拟请求 ↓
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                sleep(3);
+                NSLog(@"任务%d完成",i);
+                dispatch_semaphore_signal(sema);
+            });
+            // 模拟请求 上
+           dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+        }
+         
+       NSLog(@"全部搞完了");
+    });
+}
+ 
+
+执行结果
+
+2019-04-12 01:31:45.291818+0800 mmmm[5417:215007] 开始0
+2019-04-12 01:31:48.297299+0800 mmmm[5417:215008] 任务0完成
+2019-04-12 01:31:48.297746+0800 mmmm[5417:215007] 开始1
+2019-04-12 01:31:51.298592+0800 mmmm[5417:215008] 任务1完成
+2019-04-12 01:31:51.298841+0800 mmmm[5417:215007] 开始2
+2019-04-12 01:31:54.300477+0800 mmmm[5417:215008] 任务2完成
+2019-04-12 01:31:54.300908+0800 mmmm[5417:215007] 开始3
+2019-04-12 01:31:57.305197+0800 mmmm[5417:215008] 任务3完成
+2019-04-12 01:31:57.305623+0800 mmmm[5417:215007] 开始4
+2019-04-12 01:32:00.311062+0800 mmmm[5417:215008] 任务4完成
+2019-04-12 01:32:00.311407+0800 mmmm[5417:215007] 全部搞完了
+ 
+
+*模拟循环网络请求 顺序进行 (GCD + group enter/leave 方式)
+
+
+- (void)serialTest2 {
+    dispatch_group_t group = dispatch_group_create();
+    for (int i = 0 ; i < 5; i++) {
+        dispatch_group_enter(group);
+        // 模拟请求 ↓
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            sleep(6 - i);
+            NSLog(@"任务%d完成",i);
+            dispatch_group_leave(group);
+        });
+        // 模拟请求 ↑
+        dispatch_group_wait(group, DISPATCH_TIME_FOREVER); // 顺序执行与同步执行的不同点
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"全部搞完了");
+    });
+}
+ 
+
+执行结果
+
+2019-04-12 00:33:46.020376+0800 mmmm[4748:188409] 任务0完成
+2019-04-12 00:33:51.021098+0800 mmmm[4748:188409] 任务1完成
+2019-04-12 00:33:55.022758+0800 mmmm[4748:188409] 任务2完成
+2019-04-12 00:33:58.023783+0800 mmmm[4748:188409] 任务3完成
+2019-04-12 00:34:00.027929+0800 mmmm[4748:188409] 任务4完成
+2019-04-12 00:34:00.028444+0800 mmmm[4748:188374] 全部搞完了

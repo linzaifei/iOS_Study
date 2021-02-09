@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E9B974025CF888B00CEE25E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B973F25CF888B00CEE25E /* AppDelegate.m */; };
+		8E9B974325CF888B00CEE25E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B974225CF888B00CEE25E /* SceneDelegate.m */; };
+		8E9B974625CF888B00CEE25E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B974525CF888B00CEE25E /* ViewController.m */; };
+		8E9B974925CF888B00CEE25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9B974725CF888B00CEE25E /* Main.storyboard */; };
+		8E9B974B25CF889100CEE25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9B974A25CF889100CEE25E /* Assets.xcassets */; };
+		8E9B974E25CF889100CEE25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9B974C25CF889100CEE25E /* LaunchScreen.storyboard */; };
+		8E9B975125CF889100CEE25E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B975025CF889100CEE25E /* main.m */; };
+		8E9B975B25CF889100CEE25E /* DrawReactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B975A25CF889100CEE25E /* DrawReactTests.m */; };
+		8E9B976625CF889100CEE25E /* DrawReactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B976525CF889100CEE25E /* DrawReactUITests.m */; };
+		8E9B977825CF88A700CEE25E /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B977725CF88A700CEE25E /* RedView.m */; };
+		8E9B977E25CFCE6A00CEE25E /* UIView+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B977D25CFCE6A00CEE25E /* UIView+category.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E9B975725CF889100CEE25E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9B973325CF888B00CEE25E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E9B973A25CF888B00CEE25E;
+			remoteInfo = DrawReact;
+		};
+		8E9B976225CF889100CEE25E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9B973325CF888B00CEE25E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E9B973A25CF888B00CEE25E;
+			remoteInfo = DrawReact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E9B973B25CF888B00CEE25E /* DrawReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9B973E25CF888B00CEE25E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E9B973F25CF888B00CEE25E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E9B974125CF888B00CEE25E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8E9B974225CF888B00CEE25E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8E9B974425CF888B00CEE25E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E9B974525CF888B00CEE25E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E9B974825CF888B00CEE25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E9B974A25CF889100CEE25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E9B974D25CF889100CEE25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E9B974F25CF889100CEE25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9B975025CF889100CEE25E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E9B975625CF889100CEE25E /* DrawReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9B975A25CF889100CEE25E /* DrawReactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawReactTests.m; sourceTree = "<group>"; };
+		8E9B975C25CF889100CEE25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9B976125CF889100CEE25E /* DrawReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9B976525CF889100CEE25E /* DrawReactUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawReactUITests.m; sourceTree = "<group>"; };
+		8E9B976725CF889100CEE25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9B977625CF88A700CEE25E /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		8E9B977725CF88A700CEE25E /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		8E9B977C25CFCE6A00CEE25E /* UIView+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+category.h"; sourceTree = "<group>"; };
+		8E9B977D25CFCE6A00CEE25E /* UIView+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+category.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E9B973825CF888B00CEE25E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B975325CF889100CEE25E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B975E25CF889100CEE25E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E9B973225CF888B00CEE25E = {
+			isa = PBXGroup;
+			children = (
+				8E9B973D25CF888B00CEE25E /* DrawReact */,
+				8E9B975925CF889100CEE25E /* DrawReactTests */,
+				8E9B976425CF889100CEE25E /* DrawReactUITests */,
+				8E9B973C25CF888B00CEE25E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E9B973C25CF888B00CEE25E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B973B25CF888B00CEE25E /* DrawReact.app */,
+				8E9B975625CF889100CEE25E /* DrawReactTests.xctest */,
+				8E9B976125CF889100CEE25E /* DrawReactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E9B973D25CF888B00CEE25E /* DrawReact */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B973E25CF888B00CEE25E /* AppDelegate.h */,
+				8E9B973F25CF888B00CEE25E /* AppDelegate.m */,
+				8E9B974125CF888B00CEE25E /* SceneDelegate.h */,
+				8E9B974225CF888B00CEE25E /* SceneDelegate.m */,
+				8E9B974425CF888B00CEE25E /* ViewController.h */,
+				8E9B974525CF888B00CEE25E /* ViewController.m */,
+				8E9B977625CF88A700CEE25E /* RedView.h */,
+				8E9B977725CF88A700CEE25E /* RedView.m */,
+				8E9B974725CF888B00CEE25E /* Main.storyboard */,
+				8E9B974A25CF889100CEE25E /* Assets.xcassets */,
+				8E9B974C25CF889100CEE25E /* LaunchScreen.storyboard */,
+				8E9B974F25CF889100CEE25E /* Info.plist */,
+				8E9B975025CF889100CEE25E /* main.m */,
+				8E9B977C25CFCE6A00CEE25E /* UIView+category.h */,
+				8E9B977D25CFCE6A00CEE25E /* UIView+category.m */,
+			);
+			path = DrawReact;
+			sourceTree = "<group>";
+		};
+		8E9B975925CF889100CEE25E /* DrawReactTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B975A25CF889100CEE25E /* DrawReactTests.m */,
+				8E9B975C25CF889100CEE25E /* Info.plist */,
+			);
+			path = DrawReactTests;
+			sourceTree = "<group>";
+		};
+		8E9B976425CF889100CEE25E /* DrawReactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B976525CF889100CEE25E /* DrawReactUITests.m */,
+				8E9B976725CF889100CEE25E /* Info.plist */,
+			);
+			path = DrawReactUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E9B973A25CF888B00CEE25E /* DrawReact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9B976A25CF889100CEE25E /* Build configuration list for PBXNativeTarget "DrawReact" */;
+			buildPhases = (
+				8E9B973725CF888B00CEE25E /* Sources */,
+				8E9B973825CF888B00CEE25E /* Frameworks */,
+				8E9B973925CF888B00CEE25E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawReact;
+			productName = DrawReact;
+			productReference = 8E9B973B25CF888B00CEE25E /* DrawReact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E9B975525CF889100CEE25E /* DrawReactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9B976D25CF889100CEE25E /* Build configuration list for PBXNativeTarget "DrawReactTests" */;
+			buildPhases = (
+				8E9B975225CF889100CEE25E /* Sources */,
+				8E9B975325CF889100CEE25E /* Frameworks */,
+				8E9B975425CF889100CEE25E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E9B975825CF889100CEE25E /* PBXTargetDependency */,
+			);
+			name = DrawReactTests;
+			productName = DrawReactTests;
+			productReference = 8E9B975625CF889100CEE25E /* DrawReactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E9B976025CF889100CEE25E /* DrawReactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9B977025CF889100CEE25E /* Build configuration list for PBXNativeTarget "DrawReactUITests" */;
+			buildPhases = (
+				8E9B975D25CF889100CEE25E /* Sources */,
+				8E9B975E25CF889100CEE25E /* Frameworks */,
+				8E9B975F25CF889100CEE25E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E9B976325CF889100CEE25E /* PBXTargetDependency */,
+			);
+			name = DrawReactUITests;
+			productName = DrawReactUITests;
+			productReference = 8E9B976125CF889100CEE25E /* DrawReactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E9B973325CF888B00CEE25E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8E9B973A25CF888B00CEE25E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					8E9B975525CF889100CEE25E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8E9B973A25CF888B00CEE25E;
+					};
+					8E9B976025CF889100CEE25E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8E9B973A25CF888B00CEE25E;
+					};
+				};
+			};
+			buildConfigurationList = 8E9B973625CF888B00CEE25E /* Build configuration list for PBXProject "DrawReact" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E9B973225CF888B00CEE25E;
+			productRefGroup = 8E9B973C25CF888B00CEE25E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E9B973A25CF888B00CEE25E /* DrawReact */,
+				8E9B975525CF889100CEE25E /* DrawReactTests */,
+				8E9B976025CF889100CEE25E /* DrawReactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E9B973925CF888B00CEE25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9B974E25CF889100CEE25E /* LaunchScreen.storyboard in Resources */,
+				8E9B974B25CF889100CEE25E /* Assets.xcassets in Resources */,
+				8E9B974925CF888B00CEE25E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B975425CF889100CEE25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B975F25CF889100CEE25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E9B973725CF888B00CEE25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9B974625CF888B00CEE25E /* ViewController.m in Sources */,
+				8E9B974025CF888B00CEE25E /* AppDelegate.m in Sources */,
+				8E9B975125CF889100CEE25E /* main.m in Sources */,
+				8E9B977825CF88A700CEE25E /* RedView.m in Sources */,
+				8E9B977E25CFCE6A00CEE25E /* UIView+category.m in Sources */,
+				8E9B974325CF888B00CEE25E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B975225CF889100CEE25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9B975B25CF889100CEE25E /* DrawReactTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B975D25CF889100CEE25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9B976625CF889100CEE25E /* DrawReactUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E9B975825CF889100CEE25E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E9B973A25CF888B00CEE25E /* DrawReact */;
+			targetProxy = 8E9B975725CF889100CEE25E /* PBXContainerItemProxy */;
+		};
+		8E9B976325CF889100CEE25E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E9B973A25CF888B00CEE25E /* DrawReact */;
+			targetProxy = 8E9B976225CF889100CEE25E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E9B974725CF888B00CEE25E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E9B974825CF888B00CEE25E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E9B974C25CF889100CEE25E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E9B974D25CF889100CEE25E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E9B976825CF889100CEE25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E9B976925CF889100CEE25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E9B976B25CF889100CEE25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzaifei.DrawReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E9B976C25CF889100CEE25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzaifei.DrawReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E9B976E25CF889100CEE25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawReactTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzaifei.DrawReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawReact.app/DrawReact";
+			};
+			name = Debug;
+		};
+		8E9B976F25CF889100CEE25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawReactTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzaifei.DrawReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawReact.app/DrawReact";
+			};
+			name = Release;
+		};
+		8E9B977125CF889100CEE25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzaifei.DrawReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawReact;
+			};
+			name = Debug;
+		};
+		8E9B977225CF889100CEE25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzaifei.DrawReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawReact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E9B973625CF888B00CEE25E /* Build configuration list for PBXProject "DrawReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9B976825CF889100CEE25E /* Debug */,
+				8E9B976925CF889100CEE25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9B976A25CF889100CEE25E /* Build configuration list for PBXNativeTarget "DrawReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9B976B25CF889100CEE25E /* Debug */,
+				8E9B976C25CF889100CEE25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9B976D25CF889100CEE25E /* Build configuration list for PBXNativeTarget "DrawReactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9B976E25CF889100CEE25E /* Debug */,
+				8E9B976F25CF889100CEE25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9B977025CF889100CEE25E /* Build configuration list for PBXNativeTarget "DrawReactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9B977125CF889100CEE25E /* Debug */,
+				8E9B977225CF889100CEE25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E9B973325CF888B00CEE25E /* Project object */;
+}

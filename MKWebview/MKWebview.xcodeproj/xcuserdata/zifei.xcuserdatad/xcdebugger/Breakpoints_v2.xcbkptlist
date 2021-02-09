@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "78113CAB-80CE-449A-B10E-FEAADB274E61"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8D59A5D-C987-401A-8842-BBC35057ED04"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MKWebview/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-webView:didFinishNavigation:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8D59A5D-C987-401A-8842-BBC35057ED04 - 94e579748888a9e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController webView:didFinishNavigation:]"
+                  moduleName = "MKWebview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zifei/Desktop/linzaifei/ios/project/%E9%9D%A2%E8%AF%95/MKWebview/MKWebview/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "B8D59A5D-C987-401A-8842-BBC35057ED04 - 86e577ca0afd4fd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46-[ViewController webView:didFinishNavigation:]_block_invoke"
+                  moduleName = "MKWebview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zifei/Desktop/linzaifei/ios/project/%E9%9D%A2%E8%AF%95/MKWebview/MKWebview/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
