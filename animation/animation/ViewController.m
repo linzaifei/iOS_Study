@@ -24,20 +24,26 @@
 //    self.redView.layer.contents =  (__bridge id) [UIImage imageNamed:@"4"].CGImage;
 //    [self.view addSubview:self.redView];
 //
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(40, 100, 200, 200)];
-    self.imageView.image = [UIImage imageNamed:@"4"];
-    [self.view addSubview:self.imageView];
-
- 
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"点击" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(90, 400, 100, 50);
-    [self.view addSubview:btn];
-    
-    [btn addTarget:self action:@selector(animation14) forControlEvents:UIControlEventTouchUpInside];
-    
+//    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(40, 100, 200, 200)];
+//    self.imageView.image = [UIImage imageNamed:@"4"];
+//    [self.view addSubview:self.imageView];
+//
+// 
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setTitle:@"点击" forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+//    btn.frame = CGRectMake(90, 400, 100, 50);
+//    [self.view addSubview:btn];
+//    
+//    [btn addTarget:self action:@selector(animation14) forControlEvents:UIControlEventTouchUpInside];
+//    
 //    [self animation14];
+    
+    
+    
+    
+    
+    
     
 }
 #pragma mark - CABasicAnimation
@@ -212,28 +218,7 @@
 }
 
 #pragma mark - CAAnimationGroup
--(void)animation13{
-    CABasicAnimation *animation = [CABasicAnimation animation];
-    animation.keyPath = @"opacity";
-    animation.toValue = @0;
 
-    
-    CAKeyframeAnimation *animation1 = [CAKeyframeAnimation animation];
-    animation1.keyPath = @"position";
-    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(20, 20, 200, 200)];
-    animation1.path = path.CGPath;
-
-
-    CAAnimationGroup *group = [CAAnimationGroup animation];
-    group.animations = @[animation,animation1];
-    group.duration = 5;
-//    group.autoreverses = YES;
-    group.repeatCount = MAXFLOAT;
-    
-    [self.redView.layer addAnimation:group forKey:@""];
-    
-    
-}
 
 #pragma mark - CATransition
 -(void)animation14{

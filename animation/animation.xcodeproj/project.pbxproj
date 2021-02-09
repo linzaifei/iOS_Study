@@ -16,6 +16,11 @@
 		8E9B970725CCE16300CEE25E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B970625CCE16300CEE25E /* main.m */; };
 		8E9B971125CCE16300CEE25E /* animationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B971025CCE16300CEE25E /* animationTests.m */; };
 		8E9B971C25CCE16300CEE25E /* animationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B971B25CCE16300CEE25E /* animationUITests.m */; };
+		8E9B978725D2230300CEE25E /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B978625D2230300CEE25E /* BasicViewController.m */; };
+		8E9B978E25D2231C00CEE25E /* KeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B978D25D2231C00CEE25E /* KeyViewController.m */; };
+		8E9B979725D22F2200CEE25E /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B979625D22F2200CEE25E /* TransitionViewController.m */; };
+		8E9B979E25D23A5F00CEE25E /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B979C25D23A5F00CEE25E /* GroupViewController.m */; };
+		8E9B97A825D25DBE00CEE25E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B97A725D25DBE00CEE25E /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		8E9B971725CCE16300CEE25E /* animationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9B971B25CCE16300CEE25E /* animationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = animationUITests.m; sourceTree = "<group>"; };
 		8E9B971D25CCE16300CEE25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9B978525D2230300CEE25E /* BasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		8E9B978625D2230300CEE25E /* BasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		8E9B978C25D2231C00CEE25E /* KeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyViewController.h; sourceTree = "<group>"; };
+		8E9B978D25D2231C00CEE25E /* KeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyViewController.m; sourceTree = "<group>"; };
+		8E9B979525D22F2200CEE25E /* TransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		8E9B979625D22F2200CEE25E /* TransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		8E9B979B25D23A5F00CEE25E /* GroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		8E9B979C25D23A5F00CEE25E /* GroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		8E9B97A625D25DBE00CEE25E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8E9B97A725D25DBE00CEE25E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		8E9B96F325CCE16200CEE25E /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				8E9B978B25D2230700CEE25E /* animation */,
 				8E9B96F425CCE16200CEE25E /* AppDelegate.h */,
 				8E9B96F525CCE16200CEE25E /* AppDelegate.m */,
 				8E9B96F725CCE16200CEE25E /* SceneDelegate.h */,
@@ -135,6 +151,23 @@
 				8E9B971D25CCE16300CEE25E /* Info.plist */,
 			);
 			path = animationUITests;
+			sourceTree = "<group>";
+		};
+		8E9B978B25D2230700CEE25E /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B978525D2230300CEE25E /* BasicViewController.h */,
+				8E9B978625D2230300CEE25E /* BasicViewController.m */,
+				8E9B978C25D2231C00CEE25E /* KeyViewController.h */,
+				8E9B978D25D2231C00CEE25E /* KeyViewController.m */,
+				8E9B979525D22F2200CEE25E /* TransitionViewController.h */,
+				8E9B979625D22F2200CEE25E /* TransitionViewController.m */,
+				8E9B979B25D23A5F00CEE25E /* GroupViewController.h */,
+				8E9B979C25D23A5F00CEE25E /* GroupViewController.m */,
+				8E9B97A625D25DBE00CEE25E /* BaseViewController.h */,
+				8E9B97A725D25DBE00CEE25E /* BaseViewController.m */,
+			);
+			path = animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9B978E25D2231C00CEE25E /* KeyViewController.m in Sources */,
+				8E9B97A825D25DBE00CEE25E /* BaseViewController.m in Sources */,
+				8E9B979725D22F2200CEE25E /* TransitionViewController.m in Sources */,
 				8E9B96FC25CCE16200CEE25E /* ViewController.m in Sources */,
 				8E9B96F625CCE16200CEE25E /* AppDelegate.m in Sources */,
+				8E9B979E25D23A5F00CEE25E /* GroupViewController.m in Sources */,
 				8E9B970725CCE16300CEE25E /* main.m in Sources */,
+				8E9B978725D2230300CEE25E /* BasicViewController.m in Sources */,
 				8E9B96F925CCE16200CEE25E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
