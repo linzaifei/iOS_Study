@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0EFA8F25E0E61B00ABDDA5 /* title.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EFA8E25E0E61B00ABDDA5 /* title.json */; };
+		8E2D1C7F25E62DA300EBA92E /* BtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1C7E25E62DA300EBA92E /* BtnViewController.m */; };
+		8E2D1C8525E6462900EBA92E /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1C8425E6462900EBA92E /* CircleView.m */; };
+		8E2D1C8F25E73BB000EBA92E /* GradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1C8E25E73BB000EBA92E /* GradientController.m */; };
+		8E2D1C9925E7749500EBA92E /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1C9825E7749500EBA92E /* ChartViewController.m */; };
+		8E2D1CA225E774F900EBA92E /* LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1CA125E774F900EBA92E /* LineChartView.m */; };
+		8E2D1CA825E77DFF00EBA92E /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1CA725E77DFF00EBA92E /* BarChartView.m */; };
+		8E2D1D8725E8E2D200EBA92E /* CloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1D8525E8E2D200EBA92E /* CloudView.m */; };
+		8E89146225DE57A9009A63DD /* SpringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E89146125DE57A9009A63DD /* SpringController.m */; };
+		8E89146B25DE5D09009A63DD /* EmittrLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E89146A25DE5D09009A63DD /* EmittrLayerController.m */; };
+		8E9A65D125F5B47300E44083 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A65D025F5B47300E44083 /* ExampleViewController.m */; };
+		8E9A65DB25F5B4D200E44083 /* Transform3DController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A65DA25F5B4D200E44083 /* Transform3DController.m */; };
+		8E9A660625F5E78500E44083 /* TvView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A660525F5E78500E44083 /* TvView.m */; };
+		8E9A660D25F5EF7C00E44083 /* MotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A660C25F5EF7C00E44083 /* MotionView.m */; };
+		8E9A661625F5F16300E44083 /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A661525F5F16300E44083 /* MotionViewController.m */; };
+		8E9A662625F61C6D00E44083 /* ReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A662525F61C6D00E44083 /* ReplicatorViewController.m */; };
 		8E9B96F625CCE16200CEE25E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B96F525CCE16200CEE25E /* AppDelegate.m */; };
 		8E9B96F925CCE16200CEE25E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B96F825CCE16200CEE25E /* SceneDelegate.m */; };
 		8E9B96FC25CCE16200CEE25E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9B96FB25CCE16200CEE25E /* ViewController.m */; };
@@ -41,6 +57,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E0EFA8E25E0E61B00ABDDA5 /* title.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = title.json; sourceTree = "<group>"; };
+		8E2D1C7D25E62DA300EBA92E /* BtnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BtnViewController.h; sourceTree = "<group>"; };
+		8E2D1C7E25E62DA300EBA92E /* BtnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtnViewController.m; sourceTree = "<group>"; };
+		8E2D1C8325E6462900EBA92E /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		8E2D1C8425E6462900EBA92E /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		8E2D1C8D25E73BB000EBA92E /* GradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientController.h; sourceTree = "<group>"; };
+		8E2D1C8E25E73BB000EBA92E /* GradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientController.m; sourceTree = "<group>"; };
+		8E2D1C9725E7749500EBA92E /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		8E2D1C9825E7749500EBA92E /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		8E2D1CA025E774F900EBA92E /* LineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineChartView.h; sourceTree = "<group>"; };
+		8E2D1CA125E774F900EBA92E /* LineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChartView.m; sourceTree = "<group>"; };
+		8E2D1CA625E77DFF00EBA92E /* BarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartView.h; sourceTree = "<group>"; };
+		8E2D1CA725E77DFF00EBA92E /* BarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartView.m; sourceTree = "<group>"; };
+		8E2D1D8525E8E2D200EBA92E /* CloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudView.m; sourceTree = "<group>"; };
+		8E2D1D8625E8E2D200EBA92E /* CloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudView.h; sourceTree = "<group>"; };
+		8E89146025DE57A9009A63DD /* SpringController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringController.h; sourceTree = "<group>"; };
+		8E89146125DE57A9009A63DD /* SpringController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringController.m; sourceTree = "<group>"; };
+		8E89146925DE5D09009A63DD /* EmittrLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmittrLayerController.h; sourceTree = "<group>"; };
+		8E89146A25DE5D09009A63DD /* EmittrLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmittrLayerController.m; sourceTree = "<group>"; };
+		8E9A65CF25F5B47300E44083 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		8E9A65D025F5B47300E44083 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		8E9A65D925F5B4D200E44083 /* Transform3DController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transform3DController.h; sourceTree = "<group>"; };
+		8E9A65DA25F5B4D200E44083 /* Transform3DController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transform3DController.m; sourceTree = "<group>"; };
+		8E9A660425F5E78500E44083 /* TvView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TvView.h; sourceTree = "<group>"; };
+		8E9A660525F5E78500E44083 /* TvView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TvView.m; sourceTree = "<group>"; };
+		8E9A660B25F5EF7C00E44083 /* MotionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionView.h; sourceTree = "<group>"; };
+		8E9A660C25F5EF7C00E44083 /* MotionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionView.m; sourceTree = "<group>"; };
+		8E9A661425F5F16300E44083 /* MotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		8E9A661525F5F16300E44083 /* MotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		8E9A662425F61C6D00E44083 /* ReplicatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplicatorViewController.h; sourceTree = "<group>"; };
+		8E9A662525F61C6D00E44083 /* ReplicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplicatorViewController.m; sourceTree = "<group>"; };
 		8E9B96F125CCE16200CEE25E /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9B96F425CCE16200CEE25E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E9B96F525CCE16200CEE25E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +143,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E2D1C7C25E62D7E00EBA92E /* 动画组案例 */ = {
+			isa = PBXGroup;
+			children = (
+				8E2D1C7D25E62DA300EBA92E /* BtnViewController.h */,
+				8E2D1C7E25E62DA300EBA92E /* BtnViewController.m */,
+				8E2D1C8325E6462900EBA92E /* CircleView.h */,
+				8E2D1C8425E6462900EBA92E /* CircleView.m */,
+			);
+			path = "动画组案例";
+			sourceTree = "<group>";
+		};
+		8E2D1C8C25E73B7300EBA92E /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8E2D1C8D25E73BB000EBA92E /* GradientController.h */,
+				8E2D1C8E25E73BB000EBA92E /* GradientController.m */,
+			);
+			path = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		8E2D1C9625E7430600EBA92E /* chart */ = {
+			isa = PBXGroup;
+			children = (
+				8E2D1C9725E7749500EBA92E /* ChartViewController.h */,
+				8E2D1C9825E7749500EBA92E /* ChartViewController.m */,
+				8E2D1CA025E774F900EBA92E /* LineChartView.h */,
+				8E2D1CA125E774F900EBA92E /* LineChartView.m */,
+				8E2D1CA625E77DFF00EBA92E /* BarChartView.h */,
+				8E2D1CA725E77DFF00EBA92E /* BarChartView.m */,
+			);
+			path = chart;
+			sourceTree = "<group>";
+		};
+		8E2D1D8425E8E2C000EBA92E /* CAReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A662425F61C6D00E44083 /* ReplicatorViewController.h */,
+				8E9A662525F61C6D00E44083 /* ReplicatorViewController.m */,
+			);
+			path = CAReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		8E9A65CE25F5B41400E44083 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A65CF25F5B47300E44083 /* ExampleViewController.h */,
+				8E9A65D025F5B47300E44083 /* ExampleViewController.m */,
+				8E9A660425F5E78500E44083 /* TvView.h */,
+				8E9A660525F5E78500E44083 /* TvView.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		8E9A65D825F5B4AF00E44083 /* CATransform3D */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A65D925F5B4D200E44083 /* Transform3DController.h */,
+				8E9A65DA25F5B4D200E44083 /* Transform3DController.m */,
+			);
+			path = CATransform3D;
+			sourceTree = "<group>";
+		};
+		8E9A660A25F5EF6800E44083 /* CoreMotion */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A660B25F5EF7C00E44083 /* MotionView.h */,
+				8E9A660C25F5EF7C00E44083 /* MotionView.m */,
+				8E9A661425F5F16300E44083 /* MotionViewController.h */,
+				8E9A661525F5F16300E44083 /* MotionViewController.m */,
+			);
+			path = CoreMotion;
+			sourceTree = "<group>";
+		};
+		8E9A663625F70F2700E44083 /* CAEmittrLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8E89146925DE5D09009A63DD /* EmittrLayerController.h */,
+				8E89146A25DE5D09009A63DD /* EmittrLayerController.m */,
+				8E2D1D8625E8E2D200EBA92E /* CloudView.h */,
+				8E2D1D8525E8E2D200EBA92E /* CloudView.m */,
+			);
+			path = CAEmittrLayer;
+			sourceTree = "<group>";
+		};
 		8E9B96E825CCE16200CEE25E = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +250,16 @@
 		8E9B96F325CCE16200CEE25E /* animation */ = {
 			isa = PBXGroup;
 			children = (
-				8E9B978B25D2230700CEE25E /* animation */,
+				8E9B978B25D2230700CEE25E /* CAAnimation */,
+				8E9A65D825F5B4AF00E44083 /* CATransform3D */,
+				8E2D1D8425E8E2C000EBA92E /* CAReplicatorLayer */,
+				8E2D1C8C25E73B7300EBA92E /* CAGradientLayer */,
+				8E9A663625F70F2700E44083 /* CAEmittrLayer */,
+				8E9A660A25F5EF6800E44083 /* CoreMotion */,
+				8E9A65CE25F5B41400E44083 /* Example */,
+				8E2D1C9625E7430600EBA92E /* chart */,
+				8E2D1C7C25E62D7E00EBA92E /* 动画组案例 */,
+				8E0EFA8E25E0E61B00ABDDA5 /* title.json */,
 				8E9B96F425CCE16200CEE25E /* AppDelegate.h */,
 				8E9B96F525CCE16200CEE25E /* AppDelegate.m */,
 				8E9B96F725CCE16200CEE25E /* SceneDelegate.h */,
@@ -153,9 +293,11 @@
 			path = animationUITests;
 			sourceTree = "<group>";
 		};
-		8E9B978B25D2230700CEE25E /* animation */ = {
+		8E9B978B25D2230700CEE25E /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				8E9B97A625D25DBE00CEE25E /* BaseViewController.h */,
+				8E9B97A725D25DBE00CEE25E /* BaseViewController.m */,
 				8E9B978525D2230300CEE25E /* BasicViewController.h */,
 				8E9B978625D2230300CEE25E /* BasicViewController.m */,
 				8E9B978C25D2231C00CEE25E /* KeyViewController.h */,
@@ -164,10 +306,10 @@
 				8E9B979625D22F2200CEE25E /* TransitionViewController.m */,
 				8E9B979B25D23A5F00CEE25E /* GroupViewController.h */,
 				8E9B979C25D23A5F00CEE25E /* GroupViewController.m */,
-				8E9B97A625D25DBE00CEE25E /* BaseViewController.h */,
-				8E9B97A725D25DBE00CEE25E /* BaseViewController.m */,
+				8E89146025DE57A9009A63DD /* SpringController.h */,
+				8E89146125DE57A9009A63DD /* SpringController.m */,
 			);
-			path = animation;
+			path = CAAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0EFA8F25E0E61B00ABDDA5 /* title.json in Resources */,
 				8E9B970425CCE16300CEE25E /* LaunchScreen.storyboard in Resources */,
 				8E9B970125CCE16300CEE25E /* Assets.xcassets in Resources */,
 				8E9B96FF25CCE16200CEE25E /* Main.storyboard in Resources */,
@@ -300,14 +443,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9B978E25D2231C00CEE25E /* KeyViewController.m in Sources */,
+				8E9A662625F61C6D00E44083 /* ReplicatorViewController.m in Sources */,
+				8E9A65DB25F5B4D200E44083 /* Transform3DController.m in Sources */,
+				8E2D1CA825E77DFF00EBA92E /* BarChartView.m in Sources */,
 				8E9B97A825D25DBE00CEE25E /* BaseViewController.m in Sources */,
+				8E9A661625F5F16300E44083 /* MotionViewController.m in Sources */,
+				8E9A660D25F5EF7C00E44083 /* MotionView.m in Sources */,
+				8E89146225DE57A9009A63DD /* SpringController.m in Sources */,
+				8E2D1C8F25E73BB000EBA92E /* GradientController.m in Sources */,
+				8E89146B25DE5D09009A63DD /* EmittrLayerController.m in Sources */,
 				8E9B979725D22F2200CEE25E /* TransitionViewController.m in Sources */,
+				8E2D1C7F25E62DA300EBA92E /* BtnViewController.m in Sources */,
 				8E9B96FC25CCE16200CEE25E /* ViewController.m in Sources */,
 				8E9B96F625CCE16200CEE25E /* AppDelegate.m in Sources */,
+				8E2D1C8525E6462900EBA92E /* CircleView.m in Sources */,
+				8E2D1C9925E7749500EBA92E /* ChartViewController.m in Sources */,
 				8E9B979E25D23A5F00CEE25E /* GroupViewController.m in Sources */,
+				8E9A660625F5E78500E44083 /* TvView.m in Sources */,
 				8E9B970725CCE16300CEE25E /* main.m in Sources */,
 				8E9B978725D2230300CEE25E /* BasicViewController.m in Sources */,
+				8E9A65D125F5B47300E44083 /* ExampleViewController.m in Sources */,
 				8E9B96F925CCE16200CEE25E /* SceneDelegate.m in Sources */,
+				8E2D1D8725E8E2D200EBA92E /* CloudView.m in Sources */,
+				8E2D1CA225E774F900EBA92E /* LineChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +638,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6U8P6EVQF;
 				INFOPLIST_FILE = animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +657,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6U8P6EVQF;
 				INFOPLIST_FILE = animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

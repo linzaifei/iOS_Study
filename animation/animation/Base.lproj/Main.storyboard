@@ -15,93 +15,14 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38b-Ed-862">
-                                <rect key="frame" x="67" y="297" width="280" height="168"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="NCT-wI-cty"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="gxb-MC-UPv"/>
-                            </scrollView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="38b-Ed-862" secondAttribute="bottom" id="4oo-TX-ZF2"/>
-                            <constraint firstItem="38b-Ed-862" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ULz-L6-iid"/>
-                            <constraint firstItem="38b-Ed-862" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XQT-Mt-fc8"/>
-                            <constraint firstItem="38b-Ed-862" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dMo-Lv-P1t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="38b-Ed-862" secondAttribute="trailing" id="gnA-Zd-Pwz"/>
-                            <constraint firstItem="38b-Ed-862" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ikV-Zq-wkw"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Animation" id="tjb-Qi-Xlc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="-38.169642857142854"/>
-        </scene>
-        <!--BasicAnimation-->
-        <scene sceneID="QF2-Yc-BuQ">
-            <objects>
-                <viewController id="Itr-HB-KVf" customClass="BasicViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fTA-yi-dLa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="M8T-T5-ZkG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="BasicAnimation" id="Rmp-r0-L6c"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zal-Pa-RPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1751" y="-38"/>
-        </scene>
-        <!--KeyFrameAnimation-->
-        <scene sceneID="Tkt-sg-WFn">
-            <objects>
-                <viewController id="8iS-R8-Qtw" customClass="KeyViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Njw-ft-cGW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tUz-SU-Rph"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="KeyFrameAnimation" id="7AV-51-ksU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T2M-3I-832" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="932" y="759"/>
-        </scene>
-        <!--Transition-->
-        <scene sceneID="SYZ-5S-rEt">
-            <objects>
-                <viewController id="p1H-xs-74i" customClass="TransitionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Lg-97-b28">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="HAq-5o-zIp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Transition" id="atU-Li-kRq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1a3-v4-ej9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1709" y="768"/>
-        </scene>
-        <!--AnimationGroup-->
-        <scene sceneID="x9K-Lm-vYX">
-            <objects>
-                <viewController id="YtJ-ei-4nU" customClass="GroupViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="udP-tm-JjW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jw0-JZ-vWp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="AnimationGroup" id="dfy-uB-cvh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8dk-qB-D5q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2465" y="759"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OA0-aM-zFa">
