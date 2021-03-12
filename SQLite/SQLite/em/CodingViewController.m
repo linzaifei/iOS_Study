@@ -19,9 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+
+    
     Person *p = [[Person alloc] initWithName:@"张三" age:12];
     Person *p1 = [[Person alloc] initWithName:@"张si" age:14];
+    
     NSArray *arr = [NSArray arrayWithObjects:p,p1, nil];
+    
     NSLog(@"%@",p.name);
     
     //序列化数据

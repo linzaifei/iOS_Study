@@ -9,4 +9,12 @@
 
 @implementation TransitionAnimation
 
+//- (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext {
+//    <#code#>
+//}
+//
+//- (NSTimeInterval)transitionDuration:(nullable id<UIViewControllerContextTransitioning>)transitionContext {
+//    <#code#>
+//}
+
 @end
