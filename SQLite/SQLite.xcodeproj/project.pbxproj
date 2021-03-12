@@ -26,7 +26,7 @@
 		8EF113D925FAFE6100EA2508 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF113D825FAFE6100EA2508 /* Util.m */; };
 		8EF113EB25FB06D200EA2508 /* Files.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF113EA25FB06D200EA2508 /* Files.m */; };
 		8EF113F125FB0A7E00EA2508 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF113F025FB0A7E00EA2508 /* CopyViewController.m */; };
-		8EF113F725FB0AF900EA2508 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF113F625FB0AF900EA2508 /* Son.m */; };
+		8EF113F725FB0AF900EA2508 /* SonCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF113F625FB0AF900EA2508 /* SonCopy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +85,8 @@
 		8EF113EA25FB06D200EA2508 /* Files.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Files.m; sourceTree = "<group>"; };
 		8EF113EF25FB0A7E00EA2508 /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		8EF113F025FB0A7E00EA2508 /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
-		8EF113F525FB0AF900EA2508 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
-		8EF113F625FB0AF900EA2508 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		8EF113F525FB0AF900EA2508 /* SonCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonCopy.h; sourceTree = "<group>"; };
+		8EF113F625FB0AF900EA2508 /* SonCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonCopy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,8 +218,8 @@
 			children = (
 				8EF113CB25FA185800EA2508 /* Person.h */,
 				8EF113CC25FA185800EA2508 /* Person.m */,
-				8EF113F525FB0AF900EA2508 /* Son.h */,
-				8EF113F625FB0AF900EA2508 /* Son.m */,
+				8EF113F525FB0AF900EA2508 /* SonCopy.h */,
+				8EF113F625FB0AF900EA2508 /* SonCopy.m */,
 			);
 			path = modal;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF113F725FB0AF900EA2508 /* Son.m in Sources */,
+				8EF113F725FB0AF900EA2508 /* SonCopy.m in Sources */,
 				8E6A5EF525F853CC0023C7D9 /* ViewController.m in Sources */,
 				8EF113AB25FA0C0600EA2508 /* BaseViewController.m in Sources */,
 				8EF113B125FA0C3400EA2508 /* SQLiteViewController.m in Sources */,

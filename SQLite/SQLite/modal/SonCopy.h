@@ -1,5 +1,5 @@
 //
-//  Son.h
+//  SonCopy.h
 //  SQLite
 //
 //  Created by zifei on 2021/3/12.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Son : NSObject
+@interface SonCopy : NSObject <NSCopying>
 
 @property(nonatomic,copy) NSString *name;
 @property(nonatomic,assign) int age;
