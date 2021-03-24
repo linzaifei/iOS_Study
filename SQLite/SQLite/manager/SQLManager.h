@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface SQLManager : NSObject
 
++(instancetype)shareSqlManager;
+
 /**
  创建一个数据库
  */
